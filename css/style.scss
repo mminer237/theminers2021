@@ -2,6 +2,10 @@
 ---
 $text-color: #454545;
 
+* {
+	position: relative;
+}
+
 body {
 	color: $text-color;
 	font-family: 'Cormorant Garamond', serif;
@@ -18,7 +22,7 @@ header {
 	padding: 20px 20px 10px 20px;
 
 	time {
-		padding-right: 25px;
+		padding: 25px;
 	}
 	.location {
 		display: inline-block;
@@ -108,6 +112,13 @@ main {
 		text-transform: uppercase;
 		margin: 20px;
 	}
+}
+
+.u {
+	border-bottom: 1px solid $text-color;
+	padding-bottom: 5px;
+	bottom: 10px;
+
 }
 
 .story-body {
