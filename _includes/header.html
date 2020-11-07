@@ -1,7 +1,9 @@
 <header>
 	<time datetime="{{ site.date | date: "%Y-%m-%d" }}">{{ site.date | date: "%B %-d, %Y" }}</time>
 	<div class="location">{{ site.location }}</div>
-	<a href="/"><h1>{{ site.manFirstName }} & {{ site.womanFirstName }}</h1></a>
+	<div class="names">
+		<a href="/"><h1>{{ site.manFirstName }} & {{ site.womanFirstName }}</h1></a>
+	</div>
 	<nav>
 		<ul>
 			<li><a href="/">Home</a></li>

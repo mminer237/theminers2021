@@ -1,10 +1,43 @@
 ---
 ---
 
+body {
+	font-family: 'Cormorant Garamond', serif;
+	margin: 0;
+}
+
+header {
+	background-color: {{ site.themeColor }};
+	color: white;
+	a { color: white; }
+	padding: 20px 20px 10px 20px;
+
+	time {
+		padding-right: 25px;
+	}
+	.location {
+		display: inline-block;
+	}
+	.names {
+		text-align: center;
+	}
+}
+
 h1 {
+	display: inline-block;
 	font-size: 42px;
 }
 
-body {
-	font-family: 'Cormorant Garamond', serif;
+nav {
+	text-align: center;
+
+	ul {
+		display: inline-flex;
+		list-style: none;
+		margin: 0 -5px;
+		
+		li {
+			margin: 0 5px;
+		}
+	}
 }
