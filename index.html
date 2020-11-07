@@ -8,12 +8,12 @@ layout: default
   alt: {{ site.manFirstName }} & {{ site.womanFirstName }}
 {% endresponsive_image_block %}
 </div>
-<div id="names">{{ site.manFirstName }} {{ site.manLastName }} <span class="and"><span class="u">and</span></span> {{ site.womanFirstName }} {{ site.womanLastName }}</div>
-<div id="info">
+<section id="names">{{ site.manFirstName }} {{ site.manLastName }} <span class="and"><span class="u">and</span></span> {{ site.womanFirstName }} {{ site.womanLastName }}</section>
+<section id="info">
 	<time datetime="{{ site.date | date: "%Y-%m-%d" }}">{{ site.date | date: "%B %-d, %Y" }}</time>
 	<div class="location">{{ site.location }}</div>
-</div>
-<div id="story">
+</section>
+<section id="story">
 	{% for event in site.data.story %}
 	<div>
 		<h2>{{ event.title }}</h2>
@@ -21,4 +21,4 @@ layout: default
 		<div class="story-body">{{ event.body | markdownify }}</div>
 	</div>
 	{% endfor %}
-</div>
+</section>
