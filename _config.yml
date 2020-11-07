@@ -42,3 +42,6 @@ responsive_image:
     - width: 540
     - width: 480
   auto_rotate: true
+
+include:
+  - _redirects
