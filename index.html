@@ -7,6 +7,8 @@ layout: default
 <div class="info">
 	<time datetime="{{ site.date | date: "%Y-%m-%d" }}">{{ site.date | date: "%B %-d, %Y" }}</time>
 	<div class="location">{{ site.location }}</div>
+</div>
+<div class="story">
 	{% for event in site.data.story %}
 	<div>
 		<h2>{{ event.title }}</h2>

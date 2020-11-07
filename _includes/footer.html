@@ -1,4 +1,6 @@
-<div class="initials">M | S</div>
+<div class="initials">
+	<span class="initial">{{ site.manFirstName | slice: 0 }}</span><span class="initial">{{ site.womanFirstName | slice: 0 }}</span>
+</div>
 {% if page.url == "/" %}
 	<div>RING PHOTO HERE</div>
 {% endif %}

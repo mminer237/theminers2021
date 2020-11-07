@@ -15,7 +15,7 @@ plugins:
   - jekyll-sitemap
 
 googleFonts:
-  - Cormorant+Garamond:400
+  - Cormorant+Garamond:300,400,700
 defaults:
   - scope:
       path: ""
