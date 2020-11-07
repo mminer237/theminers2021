@@ -7,6 +7,8 @@
 <img
 	src="/{{ path }}"
 	alt="{{ alt }}"
+	height="{{ original.height }}"
+	width="{{ original.width }}"
 	srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w"
 	sizes="{{ sizes | default: "100vw"}}"
 >

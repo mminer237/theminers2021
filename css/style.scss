@@ -87,6 +87,11 @@ main {
 
 .wide-image {
 	overflow-x: hidden;
+
+	img {
+		width: 100vw;
+		height: auto;
+	}
 }
 
 #names, #info, #story {
