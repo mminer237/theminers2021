@@ -12,6 +12,7 @@ date: 2021-06-12
 location: Champaign, IL
 
 plugins:
+  - jekyll-responsive-image
   - jekyll-sitemap
 
 googleFonts:
@@ -29,3 +30,15 @@ collections:
 
 sass:
   style: compressed
+
+responsive_image:
+  template: _includes/responsive-image.html
+  sizes:
+    - width: 4096
+    - width: 1920
+    - width: 1080
+    - width: 720
+    - width: 640
+    - width: 540
+    - width: 480
+  auto_rotate: true

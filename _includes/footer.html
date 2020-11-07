@@ -2,6 +2,9 @@
 	<span class="initial">{{ site.manFirstName | slice: 0 }}</span><span class="initial">{{ site.womanFirstName | slice: 0 }}</span>
 </div>
 {% if page.url == "/" %}
-	<div>RING PHOTO HERE</div>
+{% responsive_image_block %}
+  path: "assets/bottom.jpg"
+  alt: {{ site.manFirstName }} & {{ site.womanFirstName }} holding hands, highlighting the engagement ring
+{% endresponsive_image_block %}
 {% endif %}
 <footer>Made by <a href="{{ site.author.site }}">{{ site.author.name }}</a></footer>
