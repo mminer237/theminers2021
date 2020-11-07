@@ -2,16 +2,18 @@
 layout: default
 ---
 
+<div class="wide-image">
 {% responsive_image_block %}
   path: "assets/main.jpg"
   alt: {{ site.manFirstName }} & {{ site.womanFirstName }}
 {% endresponsive_image_block %}
-<div class="names">{{ site.manFirstName }} {{ site.manLastName }} <span class="and u">and</span> {{ site.womanFirstName }} {{ site.womanLastName }}</div>
-<div class="info">
+</div>
+<div id="names">{{ site.manFirstName }} {{ site.manLastName }} <span class="and u">and</span> {{ site.womanFirstName }} {{ site.womanLastName }}</div>
+<div id="info">
 	<time datetime="{{ site.date | date: "%Y-%m-%d" }}">{{ site.date | date: "%B %-d, %Y" }}</time>
 	<div class="location">{{ site.location }}</div>
 </div>
-<div class="story">
+<div id="story">
 	{% for event in site.data.story %}
 	<div>
 		<h2>{{ event.title }}</h2>

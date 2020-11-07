@@ -12,7 +12,7 @@ body {
 	margin: 0;
 }
 
-header, nav, footer, .info {
+header, nav, footer, #info {
 	background-color: {{ site.themeColor }};
 	color: white;
 	a { color: white; }
@@ -69,48 +69,21 @@ nav {
 
 main {
 	text-align: center;
+}
 
-	> div {
-		padding: 40px;
-	}
-	.names {
-		font-size: 56px;
-	}
+.wide-image {
+	overflow-x: hidden;
+}
+
+#names, #info, #story {
+	padding: 40px;
+}
+
+#names {
+	font-size: 56px;
 	.and {
 		font-size: 22px;
 		text-transform: uppercase;
-	}
-	.info {
-		letter-spacing: 5px;
-		text-transform: uppercase;
-	}
-	time {
-		font-size: 40px;
-	}
-	.location {
-		font-size: 16px;
-		font-weight: 700;
-		margin-top: 35px;
-	}
-	.story {
-		margin: auto;
-		padding: 80px 0;
-		max-width: 700px;
-
-		> div {
-			padding: 40px 0;
-		}
-		.time {
-			font-size: 16px;
-			letter-spacing: 5px;
-			text-transform: uppercase;
-		}
-	}
-	h2 {
-		font-size: 28px;
-		letter-spacing: 5px;
-		text-transform: uppercase;
-		margin: 20px;
 	}
 }
 
@@ -119,6 +92,42 @@ main {
 	padding-bottom: 5px;
 	bottom: 10px;
 
+}
+
+#info {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+
+	time {
+		font-size: 40px;
+	}
+
+	.location {
+		font-size: 16px;
+		font-weight: 700;
+		margin-top: 35px;
+	}
+}
+
+#story {
+	margin: auto;
+	padding: 80px 0;
+	max-width: 700px;
+
+	> div {
+		padding: 40px 0;
+	}
+	.time {
+		font-size: 16px;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+	}
+}
+h2 {
+	font-size: 28px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	margin: 20px;
 }
 
 .story-body {
