@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div>BIG PHOTO HERE</div>
+<div class="names">{{ site.manFirstName }} {{ site.manLastName }} <span class="and">and</span> {{ site.womanFirstName }} {{ site.womanLastName }}</div>
+<div class="info">
+	<time datetime="{{ site.date | date: "%Y-%m-%d" }}">{{ site.date | date: "%B %-d, %Y" }}</time>
+	<div class="location">{{ site.location }}</div>
+	{% for event in site.data.story %}
+	<div>
+		<h2>{{ event.title }}</h2>
+		<div class="time">{{ event.time }}</div>
+		<div class="story-body">{{ event.body | markdownify }}</div>
+	</div>
+	{% endfor %}
+</div>

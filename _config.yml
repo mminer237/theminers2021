@@ -1,0 +1,29 @@
+title: Matthew Miner and Samantha Lewis's Wedding Website
+author:
+  name: Matthew Miner
+  email: mminer237@gmail.com
+  site: https://matthewminer.name
+themeColor: "#052f57"
+manFirstName: Matthew
+manLastName: Miner
+womanFirstName: Samantha
+womanLastName: Lewis
+date: 2021-06-12
+location: Champaign, IL
+
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+collections:
+  pages:
+    output: true
+    permalink: /:path
+
+sass:
+  style: compressed
