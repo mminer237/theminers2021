@@ -265,6 +265,10 @@ a {
 }
 
 @media (min-width: 700px) {
+	.events {
+		padding-bottom: 80px;
+	}
+
 	.event {
 		margin-bottom: -1px;
 	}
