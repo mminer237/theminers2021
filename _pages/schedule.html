@@ -1,0 +1,25 @@
+---
+---
+<h2>Schedule</h2>
+<hr>
+<div class="events">
+	{% for event in site.data.schedule %}
+	<div class="event">
+		<div>
+			<h3>{{ event.title }}</h3>
+			<time datetime="{{ event.time | date_to_xmlschema }}">{{ event.time | date: "%A, %B %-d, %Y<br>%l:%M %p" }}</time>
+		</div><div>
+			{% if event.image %}
+			<img src="{{ event.image }}" alt="{{ event.image | split: '.' | first }}">
+			{% endif %}
+			<div class="location">{{ event.location.name }}
+				{% for line in event.location.address %}
+				<br>{{ line }}
+				{% endfor %}
+			</div>
+			<a href="https://www.google.com/maps/search/?api=1&query={{ event.location.name | url_encode }}%2C+{{ event.location.address | join: ', ' | url_encode }}" class="button">View on Map</a>
+			<a href="/{{ event.title | escape}}.ics" download="{{ event.title | escape }}.ics" class="button">Add to Calendar</a>
+		</div>
+	</div>
+	{% endfor %}
+</div>

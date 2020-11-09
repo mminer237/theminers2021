@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:-//IDN theminers2021.com//ICS Generator
+BEGIN:VEVENT
+UID:{{ page.uuid }}
+DTSTAMP:{{ page.timestamp }} 20201108T160612Z
+DTSTART:{{ page.time | date: "%Y%m%dT%H%M%S" }}
+DTEND:{{ page.time | date: "%Y%m%dT%H%M%S" }}
+SUMMARY:{{ page.title }}
+LOCATION:{{ page.location }}
+END:VEVENT
+END:VCALENDAR

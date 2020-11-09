@@ -230,18 +230,71 @@ hr {
 		padding-top: 5px;
 	}
 
-	.item:not(:last-child)::before {
+	.item:not(:last-child) {
 		border-bottom: 1px solid $text-color;
-		content: "";
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 100%;
 	}
 }
 
 a {
 	color: $text-color;
+}
+
+.events {
+	padding: 15px 0;
+
+	h3 {
+		text-transform: uppercase;
+		font-size: 32px;
+		font-weight: 400;
+		letter-spacing: 10px;
+	}
+
+	time {
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 5px;
+		line-height: 32px;
+		text-transform: uppercase;
+	}
+
+	.location {
+		font-size: 20px;
+		line-height: 26px;
+		margin: 10px;
+	}
+}
+
+@media (min-width: 700px) {
+	.event {
+		margin-bottom: -1px;
+	}
+	
+	.event > div {
+		display: inline-block;
+		padding: 80px;
+		width: 290px;
+	}
+
+	.event > div:last-child {
+		border-left: 1px solid $text-color;
+	}
+}
+
+@media (max-width: 699px) {
+	.event {
+		border-bottom: 1px solid $text-color;
+	}
+}
+
+a.button {
+	border: 1px solid $text-color;
+	display: inline-block;
+	font-size: 15px;
+	margin: 10px;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 230px;
 }
 
 .initials {

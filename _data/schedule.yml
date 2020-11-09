@@ -1,0 +1,16 @@
+- title: Ceremony
+  image: /assets/rings.svg
+  time: 2021-06-12 14:30:00 -0500
+  location:
+    name: Faith Baptist Church
+    address:
+      - 4601 North Market Street
+      - Champaign, IL 61822
+- title: Reception
+  image: /assets/cake.svg
+  time: 2021-06-12 16:30:00 -0500
+  location:
+    name: Faith Baptist Church
+    address:
+      - 4601 North Market Street
+      - Champaign, IL 61822
