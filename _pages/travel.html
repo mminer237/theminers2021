@@ -1,0 +1,28 @@
+---
+---
+<h2>Travel</h2>
+<hr>
+<div class="container">
+	{%- for airport in site.data.travel.airports %}
+	<div class="item">
+		<img src="/assets/plane.svg" alt="plane outline">
+		<h3>{{ airport.name }}</h3>
+		<h4>Airport</h4>
+		{%- if airport.description %}
+		{{ airport.description | markdownify }}
+		{%- endif %}
+		<a href="https://www.google.com/maps/search/?api=1&query={{ airport.name | url_encode }}%2C+{{ airport.address | join: ', ' | url_encode }}" class="button">View on Map</a>
+	</div>
+	{%- endfor %}
+	{%- for hotel in site.data.travel.hotels %}
+	<div class="item">
+		<img src="/assets/hotel.svg" alt="hotel outline">
+		<h3>{{ hotel.name }}</h3>
+		<h4>Hotel</h4>
+		{%- if hotel.description %}
+		{{ hotel.description | markdownify }}
+		{%- endif %}
+		<a href="https://www.google.com/maps/search/?api=1&query={{ hotel.name | url_encode }}%2C+{{ hotel.address | join: ', ' | url_encode }}" class="button">View on Map</a>
+	</div>
+	{%- endfor %}
+</div>

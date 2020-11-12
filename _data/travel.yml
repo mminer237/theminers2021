@@ -1,0 +1,12 @@
+airports:
+  - name: University of Illinois Willard Airport (CMI)
+    description: |-
+      There are other airports in Bloomington and Springfield, but they are at least an hour away from Champaign.
+    address:
+      - 11 Airport Rd
+      - Savoy, IL 61874
+hotels:
+  - name: Country Inn & Suites
+    address:
+      - 602 W Marketview Dr
+      - Champaign, IL 61822
