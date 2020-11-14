@@ -3,10 +3,10 @@ layout: default
 ---
 
 <div class="wide-image">
-{% responsive_image_block %}
+{%- responsive_image_block %}
   path: "assets/main.jpg"
   alt: {{ site.manFirstName }} & {{ site.womanFirstName }}
-{% endresponsive_image_block %}
+{%- endresponsive_image_block %}
 </div>
 <section id="names">{{ site.manFirstName }} {{ site.manLastName }} <span class="and"><span class="u">and</span></span> {{ site.womanFirstName }} {{ site.womanLastName }}</section>
 <section id="info">
