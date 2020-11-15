@@ -242,16 +242,6 @@ hr {
 		height: calc(100% - 100px);
 	}
 }
-@media (min-width: 900px) {
-	.item:nth-child(odd)::before {
-		border-right: 1px solid $text-color;
-		content: "";
-		position: absolute;
-		top: 50px;
-		right: -1px;
-		height: calc(100% - 100px);
-	}
-}
 
 @media (max-width: 699px) {
 	.registries .item {
@@ -263,9 +253,24 @@ hr {
 	}
 }
 
+@media (min-width: 900px) {
+	.item:nth-child(odd)::before {
+		border-right: 1px solid $text-color;
+		content: "";
+		position: absolute;
+		top: 50px;
+		right: -1px;
+		height: calc(100% - 100px);
+	}
+
+	.item {
+		padding: 120px 30px;
+	}
+}
+
 @media (max-width: 899px) {
 	.item {
-		padding-top: 5px;
+		padding-top: 15px;
 	}
 
 	.item:not(:last-child) {
@@ -336,6 +341,36 @@ h3, h4 {
 @media (max-width: 699px) {
 	.event {
 		border-bottom: 1px solid $text-color;
+	}
+}
+
+.wedding-party img,
+.places img {
+	border-radius: 50%;
+	width: 150px;
+	height: auto;
+}
+
+.wedding-party .item {
+	justify-content: start;
+}
+
+.wedding-party .item,
+.places .item {
+	width: 540px;
+}
+
+@media (min-width: 1200px) {
+	.wedding-party,
+	.places {
+		max-width: 1200px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.wedding-party .item,
+	.places .item {
+		padding: 60px 30px;
 	}
 }
 

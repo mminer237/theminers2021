@@ -1,0 +1,24 @@
+---
+---
+<h2>Wedding Party</h2>
+<hr style="max-width: 1080px;">
+<div class="container wedding-party">
+	{%- for person in site.data.wedding-party.people %}
+	<div class="item">
+		{%- if person.picture %}
+{%- responsive_image_block %}
+  path: "{{ person.picture }}"
+  alt: {{ person.name }}
+  sizes: "150px"
+{%- endresponsive_image_block %}
+		{%- endif %}
+		<h3>{{ person.name }}</h3>
+		{%- if person.role %}
+		<h4>{{ person.role }}</h4>
+		{%- endif %}
+		{%- if person.description %}
+		{{ person.description | markdownify }}
+		{%- endif %}
+	</div>
+	{%- endfor %}
+</div>

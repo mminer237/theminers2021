@@ -1,0 +1,38 @@
+people:
+  - name: Jessica Lewis
+    # picture: assets/people/jessica.jpg
+    role: Maid of Honor
+    description: My big sister of course!
+  - name: Klara Noel
+    picture: assets/people/klara.jpg
+    role: Bridesmaid
+  - name: Rebecca Baals
+    # picture: assets/people/becca.jpg
+    role: Bridesmaid
+    description: The one who started it all and technically introduced us!
+  - name: Salena Grimsley
+    # picture: assets/people/salena.jpg
+    role: Bridesmaid
+  - name: Jael Lumbres
+    # picture: assets/people/jael.jpg
+    role: Bridesmaid
+    description: The one who got me through nursing school :)
+  - name: Jordan Miner
+    picture: assets/people/jordan.jpg
+    role: Best Man
+    description: My little big brother
+  - name: Jacob Miner
+    picture: assets/people/jacob.jpg
+    role: Groomsman
+    description: My big little brother
+  - name: Gregory Baals
+    # picture: assets/people/greg.jpg
+    role: Groomsman
+    description: My first friend and roommate in college who's always been there for me, showering me in advice
+  - name: David Buck
+    # picture: assets/people/david.jpg
+    role: Groomsman
+  - name: Terence Williams
+    picture: assets/people/terence.jpg
+    role: Groomsman
+    description: My best friend throughout law school
