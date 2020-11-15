@@ -233,7 +233,7 @@ hr {
 }
 
 @media (min-width: 700px) {
-	.registries .item:nth-child(odd)::before {
+	.registries .item:nth-child(odd):not(:last-child)::before {
 		border-right: 1px solid $text-color;
 		content: "";
 		position: absolute;
@@ -254,7 +254,7 @@ hr {
 }
 
 @media (min-width: 900px) {
-	.item:nth-child(odd)::before {
+	.item:nth-child(odd):not(:last-child)::before {
 		border-right: 1px solid $text-color;
 		content: "";
 		position: absolute;
@@ -312,7 +312,9 @@ h3, h4 {
 }
 
 .events .location,
-.item p {
+.item p,
+.item .address,
+.item a[href^="tel:"] {
 	font-size: 20px;
 	line-height: 26px;
 	margin: 10px;
@@ -346,9 +348,12 @@ h3, h4 {
 
 .wedding-party img,
 .places img {
-	border-radius: 50%;
 	width: 150px;
 	height: auto;
+}
+
+.wedding-party img {
+	border-radius: 50%;
 }
 
 .wedding-party .item {

@@ -1,0 +1,30 @@
+---
+---
+<h2>Restaurants</h2>
+<p>Here are some tasty places we recommend you check out while you're in town.</p>
+<hr style="max-width: 1080px;">
+<div class="container places">
+	{%- for place in site.data.places %}
+	<div class="item">
+		{%- if place.image %}
+{%- responsive_image_block %}
+  path: "{{ place.image }}"
+  alt: {{ place.name }} logo
+  sizes: "150px"
+{%- endresponsive_image_block %}
+		{%- endif %}
+		<h3>{{ place.name }}</h3>
+		{%- if place.description %}
+		{{ place.description | markdownify }}
+		{%- endif %}
+		<div class="address">{{ place.address | join: '<br>' }}</div>
+		{%- if place.phoneNumber %}
+		<a href="tel:{{ place.phoneNumber }}">{{ place.phoneNumber }}</a>
+		{%- endif %}
+		<a href="https://www.google.com/maps/search/?api=1&query={{ place.name | url_encode }}%2C+{{ place.address | join: ', ' | url_encode }}" class="button">View on Map</a>
+		{%- if place.website %}
+		<a href="{{ place.website }}" class="button">View Website</a>
+		{%- endif %}
+	</div>
+	{%- endfor %}
+</div>

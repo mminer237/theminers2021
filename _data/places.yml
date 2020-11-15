@@ -1,0 +1,75 @@
+- name: Portillo's Hot Dogs
+  image: assets/places/portillos.png
+  address:
+    - 2306 North Prospect Avenue
+    - Champaign, IL 61822
+  phoneNumber: 217-207-9000
+  website: https://www.portillos.com/locations/champaign/
+- name: Monical's Pizza
+  image: assets/places/monicals.png
+  address:
+    - 205 North Mattis Avenue
+    - Champaign, IL 61821
+  phoneNumber: 217-359-3514
+  website: https://www.monicals.com/locations/monicals-pizza-of-champaign-n-mattis-ave
+- name: Thara Thai
+  image: assets/places/thara-thai.png
+  address:
+    - 912 1/2 West Bloomington Road
+    - Champaign, IL 61821
+  phoneNumber: 217-378-1986
+  website: http://tharathairestaurant.com/
+- name: Five Guys
+  image: assets/places/five-guys.jpg
+  address:
+    - 901 B West Anthony Drive
+    - Champaign, IL 61821
+  phoneNumber: 217-398-0869
+  website: https://order.fiveguys.com/menu/five-guys-champaign/
+- name: Black Dog Smoke & Ale House
+  image: assets/places/black-dog.jpg
+  address:
+    - 320 North Chestnut Street
+    - Champaign, IL 61820
+  phoneNumber: 217-954-0465
+  website: https://www.blackdogsmoke.com/
+- name: Bobo's Barbecue
+  image: assets/places/bobos-bbq.png
+  address:
+    - 1511 West Springfield Avenue
+    - Champaign, IL 61821
+  phoneNumber: 217-355-2271
+  website: https://bobosbbqchampaign.com/
+- name: Dos Reales Mexican Restaurant
+  address:
+    - 1407 North Prospect Avenue
+    - Champaign, IL 61820
+  phoneNumber: 217-351-6879
+- name: Blaze Pizza
+  image: assets/places/blaze.png
+  address:
+    - 2506 North Prospect Avenue
+    - Champaign, IL 61822
+  phoneNumber: 217-560-3088
+  website: https://www.blazepizza.com/locations/champaign/
+- name: Billy Barooz Pub & Grill
+  image: assets/places/billy-barooz.jpg
+  address:
+    - 2521 Village Green Place
+    - Champaign, IL 61822
+  phoneNumber: 217-355-8030
+  website: https://www.billybarooz.com/
+- name: Kohinoor Indian Restaurant
+  image: assets/places/kohinoor.jpg
+  address:
+    - 6 East Columbia Avenue
+    - Champaign, IL 61820
+  phoneNumber: 217-552-1384
+  website: https://www.kohinoorchampaign.com/
+- name: San Maru
+  image: assets/places/san-maru.png
+  address:
+    - 2504 Village Green Place
+    - Champaign, IL 61822
+  phoneNumber: 217-352-2119
+  website: https://sanmarucu.com/
