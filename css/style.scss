@@ -379,6 +379,35 @@ h3, h4 {
 	}
 }
 
+.photos {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 60px;
+	align-items: center;
+	margin: 30px auto;
+	max-width: 1080px;
+}
+
+.photos a {
+	@media (min-width: 750px) {
+		margin: 30px;
+	}
+	@media (max-width: 749px) {
+		margin: 4vw;
+	}
+}
+
+.photos img {
+	height: auto;
+	width: 100%;
+}
+
+.photos>:nth-child(14n+1),
+.photos>:nth-child(14n+8) {
+	grid-column-end: span 2;
+	grid-row-end: span 2;
+}
+
 a.button {
 	border: 1px solid $text-color;
 	display: inline-block;

@@ -1,0 +1,18 @@
+---
+---
+<h2>Photos</h2>
+<hr style="max-width: 1080px;">
+<div class="photos">
+	{%- for photo in site.data.photos %}
+	{%- assign remainderOne = forloop.index | modulo: 14 | minus: 1 %}
+	{%- assign remainderEight = forloop.index | modulo: 14 | minus: 8 %}
+	<a href="{{ photo }}" target="_blank">
+{%- responsive_image_block %}
+  path: "{{ photo }}"
+  alt: {{ site.manFirstName }} & {{ site. womanFirstName }}
+  sizes: "{% if remainderOne == 0 or remainderEight == 0 %}480px{% else %}240px{% endif %}"
+{%- endresponsive_image_block %}
+	</a>
+	{%- assign i = i | plus: 1 %}
+	{%- endfor %}
+</div>
