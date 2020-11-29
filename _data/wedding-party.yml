@@ -1,6 +1,6 @@
 people:
   - name: Jessica Lewis
-    # picture: assets/people/jessica.jpg
+    picture: assets/people/jessica.jpg
     role: Maid of Honor
     description: My big sister of course!
   - name: Klara Noel
@@ -11,7 +11,7 @@ people:
     role: Bridesmaid
     description: The one who started it all and technically introduced us!
   - name: Salena Grimsley
-    # picture: assets/people/salena.jpg
+    picture: assets/people/salena.jpg
     role: Bridesmaid
   - name: Jael Lumbres
     # picture: assets/people/jael.jpg
