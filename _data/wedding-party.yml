@@ -7,14 +7,14 @@ people:
     picture: assets/people/klara.jpg
     role: Bridesmaid
   - name: Rebecca Baals
-    # picture: assets/people/becca.jpg
+    picture: assets/people/becca.jpg
     role: Bridesmaid
     description: The one who started it all and technically introduced us!
   - name: Salena Grimsley
     picture: assets/people/salena.jpg
     role: Bridesmaid
   - name: Jael Lumbres
-    # picture: assets/people/jael.jpg
+    picture: assets/people/jael.jpg
     role: Bridesmaid
     description: The one who got me through nursing school :)
   - name: Jordan Miner
@@ -36,3 +36,6 @@ people:
     picture: assets/people/terence.jpg
     role: Groomsman
     description: My best friend throughout law school
+  - name: Jonathan Lewis
+    picture: assets/people/jonathan.jpg
+    role: Usher
