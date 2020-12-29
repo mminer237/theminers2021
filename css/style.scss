@@ -6,7 +6,14 @@ $text-color: #454545;
 	position: relative;
 }
 
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
 body {
+    height: 100%;
+    overflow-y: scroll;
 	color: $text-color;
 	display: flex;
 	flex-direction: column;
@@ -320,7 +327,7 @@ h3, h4 {
 	margin: 10px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 915px) {
 	.events {
 		padding-bottom: 80px;
 	}
@@ -340,8 +347,8 @@ h3, h4 {
 	}
 }
 
-@media (max-width: 699px) {
-	.event {
+@media (max-width: 914px) {
+	.event, .faq > div {
 		border-bottom: 1px solid $text-color;
 	}
 }
@@ -365,17 +372,35 @@ h3, h4 {
 	width: 540px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1215px) {
 	.wedding-party,
 	.places {
 		max-width: 1200px;
+
+		.item:nth-child(odd):not(:last-child)::before {
+			border-right: 1px solid $text-color;
+			content: "";
+			position: absolute;
+			top: 50px;
+			right: -1px;
+			height: calc(100% - 100px);
+		}
+	
+		.item {
+			padding: 120px 30px;
+		}
 	}
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1214px) {
 	.wedding-party .item,
 	.places .item {
 		padding: 60px 30px;
+	}
+
+	.wedding-party .item:not(:last-child),
+	.places .item:not(:last-child) {
+		border-bottom: 1px solid $text-color;
 	}
 }
 
