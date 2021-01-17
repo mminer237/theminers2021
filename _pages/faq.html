@@ -1,5 +1,18 @@
 ---
+title: FAQ
 ---
 <h2>FAQ</h2>
 <hr>
-<p>We're still working on this...</p>
+<div class="faq">
+	{% for qa in site.data.faq %}
+	<div>
+		<div class="q">
+			<h3>Question</h3>
+			<div>{{ qa.q }}</div>
+		</div><div class="a">
+			<h3>Answer</h3>
+			{{ qa.a | markdownify }}
+		</div>
+	</div>
+	{% endfor %}
+</div>

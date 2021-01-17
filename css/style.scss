@@ -164,12 +164,12 @@ main {
 		letter-spacing: 5px;
 		text-transform: uppercase;
 	}
-	h2 {
-		font-size: 28px;
-		letter-spacing: 5px;
-		text-transform: uppercase;
-		margin: 20px;
-	}
+}
+#story h2, .faq .q>div {
+	font-size: 28px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	margin: 20px;
 }
 
 p {
@@ -248,6 +248,34 @@ hr {
 		right: -1px;
 		height: calc(100% - 100px);
 	}
+
+	.faq {
+		> div {
+			padding: 30px 0;
+		}
+
+		.q, .a {
+			display: inline-block;
+			padding: 10px 30px;
+			width: 600px;
+			max-width: 40vw;
+		}
+
+		h3 {
+			font-weight: bold;
+		}
+		
+		.q {
+			border-right: 1px solid;
+			margin: 0 -1px 0 1px;
+			vertical-align: top;
+		}
+
+		.a {
+			border-left: 1px solid $text-color;
+			vertical-align: middle;
+		}
+	}
 }
 
 @media (max-width: 699px) {
@@ -257,6 +285,10 @@ hr {
 
 	.registries .item:not(:last-child) {
 		border-bottom: 1px solid $text-color;
+	}
+
+	.faq > div {
+		margin: 20px;
 	}
 }
 
@@ -303,6 +335,10 @@ h3 {
 		font-size: 32px;
 		letter-spacing: 10px;
 	}
+}
+
+.faq h3 {
+	font-size: 16px;
 }
 
 h4, .events time {
@@ -442,6 +478,15 @@ a.button {
 	text-decoration: none;
 	text-transform: uppercase;
 	width: 230px;
+}
+
+.faq {
+
+}
+
+.q {
+	font-size: 28px;
+
 }
 
 .initials {
