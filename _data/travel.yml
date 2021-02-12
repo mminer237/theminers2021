@@ -6,7 +6,7 @@ airports:
       - 11 Airport Rd
       - Savoy, IL 61874
 hotels:
-  - name: Country Inn & Suites
+  - name: Home2 Suites by Hilton Champaign / Urbana
     address:
-      - 602 W Marketview Dr
-      - Champaign, IL 61822
+      - 2013 South Neil St
+      - Champaign, IL 61820
