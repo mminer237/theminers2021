@@ -2,7 +2,6 @@ people:
   - name: Jessica Lewis
     picture: assets/people/jessica.jpg
     role: Maid of Honor
-    description: My big sister of course!
   - name: Klara Noel
     picture: assets/people/klara.jpg
     role: Bridesmaid
@@ -22,10 +21,10 @@ people:
     picture: assets/people/jacob.jpg
     role: Groomsman
   - name: Gregory Baals
-    # picture: assets/people/greg.jpg
+    picture: assets/people/greg.jpg
     role: Groomsman
   - name: David Buck
-    # picture: assets/people/david.jpg
+    picture: assets/people/david.jpg
     role: Groomsman
   - name: Terence Williams
     picture: assets/people/terence.jpg
