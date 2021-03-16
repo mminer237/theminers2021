@@ -1,17 +1,23 @@
 ---
+title: RSVP
 ---
 <h2>RSVP</h2>
+<p>Please let us know if you will be coming by <time datetime="{{ site.rsvpDeadline | date: "%Y-%m-%d" }}">{{ site.rsvpDeadline | date: "%B %-d" }}</time></p>
 <form name="rsvp" method="POST" data-netlify="true">
 	<label for="name">Party Name</label>
 	<input type="text" id="name" name="name" />
-	<div>Will you be attending in person?</div>
-	<input type="radio" id="yes" name="going" />
-	<label for="yes">Yes</label>
-	<input type="radio" id="no" name="going" />
-	<label for="no">No</label>
+	<fieldset>
+		<legend>Will you be attending in person?</legend>
+		<label>
+			<input type="radio" name="attendance" value="Attending"> Yes
+		</label>
+		<label>
+			<input type="radio" name="attendance" value="Not Attending"> No
+		</label>
+	</fieldset>
 	<label for="number">How many will be attending in your party?</label>
 	<input type="number" id="number" name="number" />
-	<label for="names">What are the names of those who will be attending?</label>
-	<input type="text" id="names" name="names" />
+	<label for="guest-names">What are the names of those who will be attending?</label>
+	<input type="text" id="guest-names" name="guest-names" />
 	<button type="submit">Submit Reservation</button>
 </form>
