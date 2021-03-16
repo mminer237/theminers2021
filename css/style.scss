@@ -507,6 +507,7 @@ form {
 
 fieldset {
 	border: none;
+	padding: 0;
 	
 	label {
 		display: inline-block;
@@ -517,9 +518,9 @@ fieldset {
 label, legend, button {
 	display: block;
 	font-size: 20px;
-	letter-spacing: 3px;
+	letter-spacing: 2.5px;
 	text-transform: uppercase;
-	margin: 30px auto 12px;
+	margin: 45px auto 12px;
 }
 
 input {
