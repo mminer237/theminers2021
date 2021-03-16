@@ -326,7 +326,17 @@ h3, #notice {
 	font-size: 28px;
 	font-weight: 400;
 	letter-spacing: 8px;
+}
+
+#notice {
 	text-align: center;
+
+	a {
+		text-decoration: none;
+	}
+	a:hover {
+		color: #9A9A9A;
+	}
 }
 
 .events {
@@ -531,6 +541,11 @@ button {
 	font-size: 22px;
 	margin: 40px auto;
 	padding: 20px;
+}
+
+button:hover {
+	background-color: scale-color({{ site.themeColor }}, $lightness: 12%);
+	cursor: pointer;
 }
 
 .initials {
